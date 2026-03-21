@@ -39,13 +39,16 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Invert filter
   m_SortingLayers:
   - name: Default
     uniqueID: 0
     locked: 0
   - name: Players
     uniqueID: 3520822885
+    locked: 0
+  - name: Invert Filter
+    uniqueID: 1037115025
     locked: 0
   m_RenderingLayers:
   - Default
