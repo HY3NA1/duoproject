@@ -129,7 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 176460862}
   - component: {fileID: 176460863}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MechaChibi 2_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1548,7 +1548,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000657edbd1911ed13d
+  m_ApplyToSortingLayers: 00000000657edbd1911ed13dd93ffa77
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -1605,7 +1605,7 @@ GameObject:
   m_Component:
   - component: {fileID: 731787396}
   - component: {fileID: 731787395}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WitchChibi 2_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2349,7 +2349,7 @@ Transform:
   m_GameObject: {fileID: 1502445752}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.06, z: 0}
+  m_LocalPosition: {x: 0, y: 27.3, z: 0}
   m_LocalScale: {x: 1.918125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

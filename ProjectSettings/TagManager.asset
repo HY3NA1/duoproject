@@ -16,7 +16,7 @@ TagManager:
   - UI
   - MAGIC CHAR
   - TECH CHAR
-  - 
+  - Sprites
   - 
   - 
   - 
@@ -47,8 +47,11 @@ TagManager:
   - name: Players
     uniqueID: 3520822885
     locked: 0
-  - name: Invert Filter
+  - name: S
     uniqueID: 1037115025
+    locked: 0
+  - name: New Layer 3
+    uniqueID: 2012889049
     locked: 0
   m_RenderingLayers:
   - Default
