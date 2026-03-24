@@ -7,6 +7,9 @@ TagManager:
   - Ground
   - TECHGUY
   - MAGICGUY
+  - inverted
+  - normal
+  - both
   layers:
   - Default
   - TransparentFX
@@ -47,11 +50,11 @@ TagManager:
   - name: Players
     uniqueID: 3520822885
     locked: 0
-  - name: S
+  - name: Sprotes
     uniqueID: 1037115025
     locked: 0
-  - name: New Layer 3
-    uniqueID: 2012889049
+  - name: inversion
+    uniqueID: 574043369
     locked: 0
   m_RenderingLayers:
   - Default
