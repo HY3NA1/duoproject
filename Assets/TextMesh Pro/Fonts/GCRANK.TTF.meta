@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b478a06b63a34724e8d97749799446a8
+guid: e2486ec4a2c74ed4383757d7bc115aae
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Rocket
+  - Gear Crank
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
