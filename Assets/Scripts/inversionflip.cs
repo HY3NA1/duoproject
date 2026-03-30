@@ -2,29 +2,28 @@ using UnityEngine;
 
 public class inversionflip : MonoBehaviour
 {
-    public bool techinrange;
+    private bool techinrange;
     private bool magicinrange;
     private bool isinverted;
     public GameObject[] invertedobjs;
     public GameObject[] normalobjs;
     public GameObject invfilter;
+    private inversionmanager manager;
     public int i;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        isinverted = false;
-        invertedobjs = GameObject.FindGameObjectsWithTag("inverted");
-        normalobjs = GameObject.FindGameObjectsWithTag("normal");
+        manager = GameObject.Find("InvManager").GetComponent<inversionmanager>();
+        isinverted = manager.isinverted;
+        invertedobjs = manager.invertedobjs;
+        normalobjs = manager.normalobjs;
         invfilter.SetActive(false);
-        for (i = 0; i < invertedobjs.Length; i++)
-        {
-            invertedobjs[i].SetActive(false);
-        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        isinverted = manager.isinverted;
         if (techinrange)
         {
             if (Input.GetKeyDown(KeyCode.Alpha7))
@@ -41,7 +40,7 @@ public class inversionflip : MonoBehaviour
                     {
                         normalobjs[i].SetActive(false);
                     }
-                    isinverted = true;
+                    manager.isinverted = true;
 
                 }
                 else if (isinverted)
@@ -55,7 +54,7 @@ public class inversionflip : MonoBehaviour
                     {
                         normalobjs[i].SetActive(true);
                     }
-                    isinverted=false;
+                    manager.isinverted=false;
                 }
             }
             
@@ -76,7 +75,7 @@ public class inversionflip : MonoBehaviour
                     {
                         normalobjs[i].SetActive(false);
                     }
-                    isinverted = true;
+                    manager.isinverted = true;
 
                 }
                 else if (isinverted)
@@ -90,7 +89,7 @@ public class inversionflip : MonoBehaviour
                     {
                         normalobjs[i].SetActive(true);
                     }
-                    isinverted = false;
+                    manager.isinverted = false;
                 }
             }
         }

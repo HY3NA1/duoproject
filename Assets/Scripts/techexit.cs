@@ -15,7 +15,7 @@ public class techexit : MonoBehaviour
         Thasexited = false;
         mecha = GameObject.Find("Mecha");
         otherdoor = GameObject.Find("magicdoor").GetComponent<magicexit>();
-        
+
     }
 
     // Update is called once per frame
