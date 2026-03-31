@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Lever : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class Lever : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Alpha7))
             {
+                transform.Rotate(0, 180, 0);
                 if (!open)
                 {
                     door.SetActive(false);
@@ -37,6 +39,7 @@ public class Lever : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Z))
             {
+                transform.Rotate(0, 180, 0);
                 if (!open)
                 {
                     door.SetActive(false);

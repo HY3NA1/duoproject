@@ -153,6 +153,7 @@ MonoBehaviour:
   invertedobjs: []
   normalobjs: []
   invfilter: {fileID: 2083709070}
+  bg: {fileID: 0}
   i: 0
 --- !u!61 &19740562
 BoxCollider2D:
@@ -1706,6 +1707,7 @@ MonoBehaviour:
   invertedobjs: []
   normalobjs: []
   invfilter: {fileID: 2083709070}
+  bg: {fileID: 0}
   i: 0
 --- !u!61 &217442619
 BoxCollider2D:
@@ -8175,6 +8177,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1637453531}
   - component: {fileID: 1637453530}
+  - component: {fileID: 1637453532}
   m_Layer: 0
   m_Name: Resetter
   m_TagString: Untagged
@@ -8209,6 +8212,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1637453532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637453529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4679dcc8d54d1d940a988ffcbc9eb59a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1667417984
 GameObject:
   m_ObjectHideFlags: 0

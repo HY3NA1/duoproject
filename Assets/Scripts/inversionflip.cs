@@ -8,6 +8,7 @@ public class inversionflip : MonoBehaviour
     public GameObject[] invertedobjs;
     public GameObject[] normalobjs;
     public GameObject invfilter;
+    public GameObject bg;
     private inversionmanager manager;
     public int i;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -32,6 +33,7 @@ public class inversionflip : MonoBehaviour
                 if (!isinverted)
                 {
                     invfilter.SetActive(true);
+                    bg.SetActive(false);
                     for (i = 0; i < invertedobjs.Length; i++) 
                     {
                         invertedobjs[i].SetActive(true);
@@ -46,6 +48,7 @@ public class inversionflip : MonoBehaviour
                 else if (isinverted)
                 {
                     invfilter.SetActive(false);
+                    bg.SetActive(true);
                     for (i = 0; i < invertedobjs.Length; i++)
                     {
                         invertedobjs[i].SetActive(false);
@@ -67,6 +70,7 @@ public class inversionflip : MonoBehaviour
                 if (!isinverted)
                 {
                     invfilter.SetActive(true);
+                    bg.SetActive(false);
                     for (i = 0; i < invertedobjs.Length; i++)
                     {
                         invertedobjs[i].SetActive(true);
@@ -81,6 +85,7 @@ public class inversionflip : MonoBehaviour
                 else if (isinverted)
                 {
                     invfilter.SetActive(false);
+                    bg.SetActive(true);
                     for (i = 0; i < invertedobjs.Length; i++)
                     {
                         invertedobjs[i].SetActive(false);

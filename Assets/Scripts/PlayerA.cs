@@ -20,7 +20,7 @@ public class PlayerA : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W) && grounded)
+        if (Input.GetKeyDown(KeyCode.Space) && grounded)
         {
             RB.AddForce(Vector2.up * jforce, ForceMode2D.Impulse);
             grounded = false;
