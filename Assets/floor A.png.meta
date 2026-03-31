@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 129db03c9c92ee24d8822517e766d282
+guid: 9fa997fa67430184992c7345a54e17b1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4139694299959427152
-    second: Witch door_0
+      213: -5686095975530569387
+    second: floor A_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -152,23 +152,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Witch door_0
+      name: floor A_0
       rect:
         serializedVersion: 2
-        x: 1397
-        y: 408
-        width: 2056
-        height: 2056
+        x: 0
+        y: 0
+        width: 474
+        height: 33
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0bf753c97f9dc86c0800000000000000
-      internalID: -4139694299959427152
+      spriteID: 551e8b326dde611b0800000000000000
+      internalID: -5686095975530569387
       vertices: []
       indices: 
       edges: []
@@ -177,7 +177,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 7a40f90c469e366499e2a74003266a3a
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -187,7 +187,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Witch door_0: -4139694299959427152
+      floor A_0: -5686095975530569387
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
