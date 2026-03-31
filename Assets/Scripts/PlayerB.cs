@@ -4,6 +4,7 @@ public class PlayerB : MonoBehaviour
 {
     private Rigidbody2D RB;
     public float jforce = 10;
+    public float jforceair = 25;
     public float gforce = 1;
     public float speed = 10;
     private bool grounded;
@@ -38,6 +39,10 @@ public class PlayerB : MonoBehaviour
         if (other.gameObject.CompareTag("Ground"))
         {
             grounded = true;
+        }
+        if (other.gameObject.CompareTag("cloud"))
+        {
+            RB.AddForce(Vector2.up * jforce, ForceMode2D.Impulse);
         }
     }
 }
