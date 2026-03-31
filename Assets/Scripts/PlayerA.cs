@@ -10,11 +10,14 @@ public class PlayerA : MonoBehaviour
     public float gforce = 1;
     public float speed = 10;
     private bool grounded;
+    private Animator anin;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         RB = GetComponent<Rigidbody2D>();
         Physics2D.gravity *= gforce;
+
+        anin = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -28,10 +31,16 @@ public class PlayerA : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             transform.Translate(Vector2.left * Time.deltaTime * speed);
+            anin.SetFloat("Speed", -1);
         }
-        if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.D))
         {
             transform.Translate(Vector2.right * Time.deltaTime * speed);
+            anin.SetFloat("Speed", 1);
+        }
+        else
+        {
+            anin.SetFloat("Speed", 0);
         }
     }
 
